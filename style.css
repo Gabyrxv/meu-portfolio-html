@@ -1,0 +1,317 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS DA PÁGINA
+   ======================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   CABEÇALHO
+   ======================================== */
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+header p {
+    font-size: 17px;
+    margin: 6px 0;
+}
+
+
+/* ========================================
+   IMAGEM DE PERFIL
+   ======================================== */
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin: 15px 0;
+}
+
+
+/* ========================================
+   ENDEREÇO E CONTATOS
+   ======================================== */
+
+address {
+    font-style: normal;
+    margin-top: 15px;
+}
+
+address p {
+    margin: 5px 0;
+}
+
+
+/* ========================================
+   LINKS
+   ======================================== */
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+header a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   CLASSE DE DESTAQUE
+   ======================================== */
+
+.destaque {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   NAVEGAÇÃO
+   ======================================== */
+
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav h2 {
+    color: #1e3a5f;
+    margin-top: 0;
+    border-bottom: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ========================================
+   LINHAS SEPARADORAS
+   ======================================== */
+
+hr {
+    border: 0;
+    border-top: 1px solid #d1d5db;
+    margin: 0;
+}
+
+
+/* ========================================
+   SEÇÕES
+   ======================================== */
+
+section {
+    background-color: white;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 30px;
+    border: 1px solid #e1e5ea;
+    border-radius: 10px;
+}
+
+
+/* ========================================
+   ID - SEÇÃO SOBRE
+   ======================================== */
+
+#sobre {
+    border-left: 5px solid #2563eb;
+}
+
+
+/* ========================================
+   TÍTULOS
+   ======================================== */
+
+h2 {
+    color: #1e3a5f;
+    font-size: 25px;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #2563eb;
+}
+
+
+/* ========================================
+   PARÁGRAFOS
+   ======================================== */
+
+p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+
+/* ========================================
+   LISTA ORDENADA
+   ======================================== */
+
+ol {
+    padding-left: 25px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+
+/* ========================================
+   LISTA DE NAVEGAÇÃO
+   ======================================== */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* ========================================
+   PROJETOS - LISTA DE DEFINIÇÃO
+   ======================================== */
+
+dl {
+    margin: 10px 0;
+}
+
+dt {
+    color: #2563eb;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+/* ========================================
+   TABELA
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: white;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f5f9;
+}
+
+
+/* ========================================
+   RODAPÉ
+   ======================================== */
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    nav li {
+        display: block;
+        margin: 8px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
