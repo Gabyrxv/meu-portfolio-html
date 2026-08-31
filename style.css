@@ -1,11 +1,11 @@
 /* ========================================
-   CONFIGURAÇÕES GERAIS DA PÁGINA
+   CONFIGURAÇÕES GERAIS
    ======================================== */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f9;
-    color: #333333;
+    background-color: #0d0d0d;
+    color: #eeeeee;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -17,14 +17,14 @@ body {
    ======================================== */
 
 header {
-    background-color: #1e3a5f;
+    background: linear-gradient(135deg, #080808, #3b0764, #7e22ce);
     color: white;
     text-align: center;
-    padding: 35px 20px;
+    padding: 45px 20px;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 38px;
     margin: 0 0 10px;
 }
 
@@ -35,20 +35,21 @@ header p {
 
 
 /* ========================================
-   IMAGEM DE PERFIL
+   FOTO DE PERFIL
    ======================================== */
 
 header img {
     width: 150px;
     height: 150px;
+    object-fit: cover;
     border-radius: 50%;
-    border: 4px solid white;
-    margin: 15px 0;
+    border: 4px solid #c084fc;
+    margin: 20px 0;
 }
 
 
 /* ========================================
-   ENDEREÇO E CONTATOS
+   CONTATOS
    ======================================== */
 
 address {
@@ -66,15 +67,16 @@ address p {
    ======================================== */
 
 a {
-    color: #2563eb;
+    color: #c084fc;
     text-decoration: none;
 }
 
 header a {
-    color: white;
+    color: #e9d5ff;
 }
 
 a:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -86,6 +88,7 @@ a:hover {
 .destaque {
     font-size: 20px;
     font-weight: bold;
+    color: #e9d5ff;
 }
 
 
@@ -94,13 +97,14 @@ a:hover {
    ======================================== */
 
 nav {
-    background-color: white;
+    background-color: #111111;
     text-align: center;
     padding: 20px;
+    border-bottom: 1px solid #3f3f46;
 }
 
 nav h2 {
-    color: #1e3a5f;
+    color: #c084fc;
     margin-top: 0;
     border-bottom: none;
 }
@@ -113,18 +117,19 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 5px 10px;
+    margin: 5px 8px;
 }
 
 nav a {
     display: inline-block;
-    padding: 8px 14px;
-    border: 1px solid #2563eb;
+    padding: 8px 15px;
+    border: 1px solid #9333ea;
     border-radius: 6px;
+    color: #d8b4fe;
 }
 
 nav a:hover {
-    background-color: #2563eb;
+    background-color: #9333ea;
     color: white;
     text-decoration: none;
 }
@@ -136,7 +141,7 @@ nav a:hover {
 
 hr {
     border: 0;
-    border-top: 1px solid #d1d5db;
+    border-top: 1px solid #3f3f46;
     margin: 0;
 }
 
@@ -146,21 +151,21 @@ hr {
    ======================================== */
 
 section {
-    background-color: white;
+    background-color: #171717;
     max-width: 900px;
     margin: 25px auto;
     padding: 30px;
-    border: 1px solid #e1e5ea;
+    border: 1px solid #3f3f46;
     border-radius: 10px;
 }
 
 
 /* ========================================
-   ID - SEÇÃO SOBRE
+   ID - SOBRE MIM
    ======================================== */
 
 #sobre {
-    border-left: 5px solid #2563eb;
+    border-left: 5px solid #9333ea;
 }
 
 
@@ -169,15 +174,15 @@ section {
    ======================================== */
 
 h2 {
-    color: #1e3a5f;
+    color: #c084fc;
     font-size: 25px;
-    border-bottom: 3px solid #2563eb;
+    border-bottom: 3px solid #9333ea;
     padding-bottom: 8px;
     margin-top: 0;
 }
 
 h3 {
-    color: #2563eb;
+    color: #c084fc;
 }
 
 
@@ -205,7 +210,7 @@ ol li {
 
 
 /* ========================================
-   LISTA DE NAVEGAÇÃO
+   LISTAS
    ======================================== */
 
 ul {
@@ -218,7 +223,7 @@ li {
 
 
 /* ========================================
-   PROJETOS - LISTA DE DEFINIÇÃO
+   PROJETOS
    ======================================== */
 
 dl {
@@ -226,14 +231,39 @@ dl {
 }
 
 dt {
-    color: #2563eb;
-    font-size: 18px;
-    margin-top: 20px;
+    color: #c084fc;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 dd {
-    margin-left: 20px;
-    margin-top: 5px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   IMAGENS DOS PROJETOS
+   ======================================== */
+
+dd img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #7e22ce;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+
+/* Efeito ao passar o mouse */
+
+dd img:hover {
+    transform: scale(1.02);
 }
 
 
@@ -249,23 +279,23 @@ table {
 
 th,
 td {
-    border: 1px solid #cbd5e1;
+    border: 1px solid #4c1d95;
     padding: 12px;
     text-align: left;
 }
 
 th {
-    background-color: #2563eb;
+    background-color: #6b21a8;
     color: white;
     font-weight: bold;
 }
 
 td {
-    background-color: white;
+    background-color: #1f1f1f;
 }
 
 tr:nth-child(even) td {
-    background-color: #f1f5f9;
+    background-color: #262626;
 }
 
 
@@ -274,11 +304,12 @@ tr:nth-child(even) td {
    ======================================== */
 
 footer {
-    background-color: #1e3a5f;
-    color: white;
+    background-color: #080808;
+    color: #c084fc;
     text-align: center;
     padding: 25px;
     margin-top: 40px;
+    border-top: 1px solid #3f3f46;
 }
 
 footer p {
@@ -292,8 +323,17 @@ footer p {
 
 @media (max-width: 700px) {
 
+    header {
+        padding: 35px 15px;
+    }
+
     header h1 {
         font-size: 28px;
+    }
+
+    header img {
+        width: 130px;
+        height: 130px;
     }
 
     section {
@@ -306,6 +346,10 @@ footer p {
         margin: 8px;
     }
 
+    nav a {
+        width: 80%;
+    }
+
     table {
         font-size: 13px;
     }
@@ -313,5 +357,9 @@ footer p {
     th,
     td {
         padding: 8px;
+    }
+
+    dd img {
+        height: 200px;
     }
 }
